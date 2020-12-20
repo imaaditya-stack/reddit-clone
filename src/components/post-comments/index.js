@@ -16,7 +16,7 @@ function PostComments({ comments }) {
           style={{ fontSize: 20, color: "rgb(135, 138, 140)" }}
         />
         <span
-          className="font-weight-bold ml-2"
+          className="font-weight-bold ml-sm-0 ml-lg-2"
           style={{ color: "#999", fontSize: 13 }}
         >
           {comments}

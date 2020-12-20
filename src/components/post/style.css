@@ -20,9 +20,10 @@
     align-self: center;
 }
 
-.votes-container {
-    max-width: 100px;
-    width: 100px;
+.votes-container,
+.comments-container {
+    max-width: 150px;
+    width: 150px;
 }
 
 .post-container:hover {
@@ -39,7 +40,8 @@
 }
 
 @media only screen and (max-width: 667px) {
-    .votes-container {
+    .votes-container,
+    .comments-container {
         width: 50px;
         max-width: 80px;
         align-items: center;
