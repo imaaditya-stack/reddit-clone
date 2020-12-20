@@ -1,0 +1,21 @@
+.votes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7f9fa;
+    border-right: 0.01em solid #f7f7f7;
+    padding: 8px 35px;
+}
+
+.votes {
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 667px) {
+    .votes-container {
+        padding: 0;
+    }
+    .votes {
+        font-size: 12px;
+    }
+}

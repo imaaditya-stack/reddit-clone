@@ -1,0 +1,25 @@
+.VC-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+.VC-list-image {
+    width: 35px;
+    border-radius: 50%;
+}
+
+.members-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+.join-btn {
+    width: 100px;
+}
+
+@media only screen and (max-width: 667px) {}

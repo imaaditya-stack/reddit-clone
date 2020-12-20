@@ -1,0 +1,60 @@
+.post-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #eee;
+}
+
+.post-info {
+    flex: 1;
+    display: flex;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments-container {
+    align-items: center;
+    align-self: center;
+}
+
+.votes-container {
+    max-width: 100px;
+    width: 100px;
+}
+
+.post-container:hover {
+    cursor: pointer;
+    border: 0.01em solid #999;
+}
+
+.post-label {
+    color: #fff;
+    padding: 5px 8px;
+    font-size: 12px;
+    border-radius: 10px;
+    margin-left: 6px;
+}
+
+@media only screen and (max-width: 667px) {
+    .votes-container {
+        width: 50px;
+        max-width: 80px;
+        align-items: center;
+        justify-content: center;
+    }
+    .launch-icon {
+        display: none;
+    }
+    .posted-by {
+        display: none;
+    }
+    .post-channel {
+        color: #999;
+    }
+    .post-title {
+        font-size: 14px;
+    }
+}

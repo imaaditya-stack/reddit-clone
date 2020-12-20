@@ -1,0 +1,18 @@
+.footer-container {
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+.footer-container ul {
+    list-style-type: none !important;
+    padding: 0;
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,19 @@
+.menu-toggle {
+    border: none !important;
+    background-color: #fff!important;
+    color: #fff !important;
+    box-shadow: none !important;
+    outline-width: none !important;
+    padding: 0 !important;
+}
+
+.post-comments {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 667px) {
+    .post-comments {
+        flex-direction: column;
+    }
+}

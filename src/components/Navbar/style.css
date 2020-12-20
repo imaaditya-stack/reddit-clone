@@ -1,0 +1,74 @@
+.navbar {
+    height: 50px;
+    border-bottom: 1px #eee solid;
+}
+
+.reddit-logo {
+    width: 100px;
+}
+
+.home-link {
+    display: flex !important;
+    width: 17%;
+    margin-top: 2.5px;
+}
+
+.home-text {
+    color: #111111;
+    font-size: 14px;
+}
+
+.search-box {
+    flex: 1;
+}
+
+.search-box-input {
+    flex: 1;
+    border: 0px;
+    border: none !important;
+    background-color: #f8f8f8 !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.search-box-container {
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    margin-top: 1px;
+    padding-left: 10px;
+}
+
+.icon {
+    color: #111111;
+    font-size: 20px !important;
+    margin: 0 10px;
+}
+
+.home-icon {
+    color: #007ACF;
+}
+
+.mail-icon {
+    color: #FF4500;
+}
+
+.get-coins-icon {
+    font-size: 19px !important;
+    padding-bottom: 2px;
+    color: orange;
+    padding-right: 3px;
+}
+
+.get-coins-btn {
+    border-radius: 140px !important;
+    margin-top: 5px;
+    color: #111111 !important;
+    font-size: 12px !important;
+    padding: 5px 14px !important;
+}
+
+@media only screen and (max-width: 667px) {
+    .navbar {
+        height: auto;
+    }
+}

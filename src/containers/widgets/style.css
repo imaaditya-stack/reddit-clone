@@ -1,0 +1,51 @@
+.widgets {
+    margin-top: 20px;
+    padding: 0 30px;
+    width: 380px;
+}
+
+.food-community-banner {
+    display: flex;
+    background-color: #FF5252;
+    color: #fff;
+    padding: 6px;
+    align-items: center;
+}
+
+.banner-image {
+    width: 50px;
+    margin-left: 10px;
+}
+
+.banner-text {
+    font-size: 18px;
+    margin: auto 0;
+    padding-left: 10px;
+}
+
+.FC-buttons {
+    background-color: #eee !important;
+    font-weight: bold !important;
+    padding: 8px 10px !important;
+}
+
+.FC-button {
+    background-color: rgb(168, 36, 85) !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.VC-list-items {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 13px;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width: 667px) {
+    .widgets {
+        width: auto;
+    }
+}
