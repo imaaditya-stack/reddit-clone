@@ -67,6 +67,20 @@
     padding: 5px 14px !important;
 }
 
+#dropdown-split-basic,
+.dropdown-split-button {
+    background-color: #fff !important;
+    color: #777 !important;
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 13px !important;
+    margin-top: 5px;
+}
+
+#dropdown-split-basic {
+    padding-left: 100px;
+}
+
 @media only screen and (max-width: 667px) {
     .navbar {
         height: auto;

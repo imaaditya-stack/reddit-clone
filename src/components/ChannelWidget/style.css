@@ -1,0 +1,16 @@
+.widget-home {
+    margin-top: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.image {
+    background-image: url('https://www.redditstatic.com/desktop2x/img/id-cards/home-banner@2x.png');
+    width: 100%;
+    height: 50px;
+}
+
+.widget-home__text {
+    font-size: 14px;
+}

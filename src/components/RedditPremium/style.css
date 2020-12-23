@@ -1,0 +1,25 @@
+.reddit_premium {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+
+.reddit_premium__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 12px;
+}
+
+.reddit_premium__try-now-btn {
+    align-self: start;
+    margin-left: 2px;
+    background-color: #FF4500 !important;
+    outline: none !important;
+    border: none !important;
+}

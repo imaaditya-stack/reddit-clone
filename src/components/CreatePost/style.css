@@ -1,0 +1,38 @@
+.create_post {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #eaeaea;
+}
+
+.create_post__input {
+    box-shadow: none !important;
+}
+
+.create_post__input {
+    flex: 1;
+}
+
+.create_post__image-icon,
+.create_post__reddit-icon,
+.create_post__link-icon {
+    color: #ccc;
+}
+
+.create_post__image-icon,
+.create_post__reddit-icon {
+    margin: 0 20px;
+}
+
+.create_post__reddit-icon {
+    font-size: 40px !important;
+}
+
+@media only screen and (max-width: 667px) {
+    .create_post {
+        margin-top: 86px;
+    }
+}

@@ -2,8 +2,8 @@ import React from "react";
 import Header from "../src/components/Navbar";
 import Sidebar from "../src/containers/sidebar";
 import Widgets from "../src/containers/widgets";
-import Posts from "../src/containers/posts";
 import "./index.css";
+import Posts from "../src/containers/posts";
 
 function App() {
   return (

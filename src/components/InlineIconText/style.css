@@ -1,0 +1,11 @@
+.inline-icon-text-wrapper {
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inline-icon-text-wrapper:hover {
+    background-color: #f7f7f7;
+    cursor: pointer;
+}
