@@ -21,7 +21,11 @@ function CreatePost() {
         <FormControl
           type="text"
           placeholder="Create Post"
-          className="create_post-input pl-4"
+          className={`pl-3`}
+          style={{
+            backgroundColor: darkThemeEnabled ? "#131621" : "#fff",
+            border: darkThemeEnabled ? "1px solid #333" : "1px solid #ccc",
+          }}
         />
       </div>
       <div>

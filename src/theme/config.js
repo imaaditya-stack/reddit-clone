@@ -1,7 +1,7 @@
 const DarkTheme = {
-  WrapperBackground: "#111",
-  MainBackground: "#000",
-  color: "#bebebe",
+  WrapperBackground: "#0F111A",
+  MainBackground: "#131621",
+  color: "#999",
 };
 
 const LightTheme = {
