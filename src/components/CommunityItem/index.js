@@ -1,8 +1,15 @@
 import React from "react";
+import { useSelector } from "react-redux";
 
 function CommunityItem({ imgSrc, label }) {
+  const darkThemeEnabled = useSelector((state) => state?.darkThemeEnabled);
   return (
-    <div className="FC_List_Item border-bottom">
+    <div
+      className="FC_List_Item"
+      style={{
+        borderBottom: darkThemeEnabled ? "none" : "1px solid #ccc",
+      }}
+    >
       <div className="d-flex py-2 pl-4 align-items-center">
         <div>
           <img

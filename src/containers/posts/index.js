@@ -6,7 +6,7 @@ import { Posts } from "../../reddit";
 
 function PostContainer() {
   return (
-    <div className="posts">
+    <div className="posts" data-aos="fade" data-aos-duration="1000">
       <CreatePost />
       <br />
       {Posts.map((post) => {

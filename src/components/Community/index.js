@@ -2,11 +2,17 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import CommunityItem from "../CommunityItem";
 import { Widgets } from "../../reddit";
+import { Wrapper } from "../../theme/Wrapper";
+import { useSelector } from "react-redux";
 import "./style.css";
 
 function Community() {
+  const darkThemeEnabled = useSelector((state) => state?.darkThemeEnabled);
   return (
-    <div className="community bg-white">
+    <Wrapper
+      className="community"
+      style={{ border: darkThemeEnabled ? "1px solid #222" : "1px solid #eee" }}
+    >
       <div className="community__banner">
         <img
           src={Widgets.Community.Banner}
@@ -43,7 +49,7 @@ function Community() {
           })}
         </div>
       </div>
-    </div>
+    </Wrapper>
   );
 }
 

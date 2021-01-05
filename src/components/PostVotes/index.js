@@ -1,11 +1,19 @@
 import React from "react";
 import ArrowUpwardRoundedIcon from "@material-ui/icons/ArrowUpwardRounded";
 import ArrowDownwardRoundedIcon from "@material-ui/icons/ArrowDownwardRounded";
+import { Wrapper } from "../../theme/Wrapper";
+import { useSelector } from "react-redux";
 import "./style.css";
 
 function PostVotes({ votes }) {
+  const darkThemeEnabled = useSelector((state) => state?.darkThemeEnabled);
   return (
-    <div className="votes">
+    <Wrapper
+      className="votes"
+      style={{
+        borderRight: darkThemeEnabled ? "1px solid #222" : "1px solid #eee",
+      }}
+    >
       <ArrowUpwardRoundedIcon
         style={{ fontSize: 20, color: "rgb(135, 138, 140)" }}
       />
@@ -13,7 +21,7 @@ function PostVotes({ votes }) {
       <ArrowDownwardRoundedIcon
         style={{ fontSize: 20, color: "rgb(135, 138, 140)" }}
       />
-    </div>
+    </Wrapper>
   );
 }
 

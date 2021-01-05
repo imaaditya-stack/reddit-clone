@@ -1,6 +1,5 @@
 .navbar {
     height: 50px;
-    border-bottom: 1px #eee solid;
 }
 
 .reddit-logo {
@@ -14,7 +13,6 @@
 }
 
 .home-text {
-    color: #111111;
     font-size: 14px;
 }
 
@@ -45,11 +43,11 @@
 }
 
 .home-icon {
-    color: #007ACF;
+    color: #007acf;
 }
 
 .mail-icon {
-    color: #FF4500;
+    color: #ff4500;
 }
 
 .get-coins-icon {

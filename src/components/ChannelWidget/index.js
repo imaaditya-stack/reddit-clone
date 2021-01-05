@@ -1,10 +1,16 @@
 import React from "react";
 import "./style.css";
 import { Image, Button } from "react-bootstrap";
+import { Wrapper } from "../../theme/Wrapper";
+import { useSelector } from "react-redux";
 
 function ChannelWidget({ label, content }) {
+  const darkThemeEnabled = useSelector((state) => state?.darkThemeEnabled);
   return (
-    <div className="widget-home">
+    <Wrapper
+      className="widget-home"
+      style={{ border: darkThemeEnabled ? "1px solid #222" : "1px solid #eee" }}
+    >
       <Image
         src="https://www.redditstatic.com/desktop2x/img/id-cards/home-banner@2x.png"
         className="img-fluid"
@@ -24,7 +30,7 @@ function ChannelWidget({ label, content }) {
           create community
         </Button>
       </div>
-    </div>
+    </Wrapper>
   );
 }
 

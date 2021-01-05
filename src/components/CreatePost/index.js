@@ -3,11 +3,17 @@ import RedditIcon from "@material-ui/icons/Reddit";
 import { FormControl } from "react-bootstrap";
 import ImageIcon from "@material-ui/icons/Image";
 import LinkIcon from "@material-ui/icons/Link";
+import { Wrapper } from "../../theme/Wrapper";
+import { useSelector } from "react-redux";
 import "./style.css";
 
 function CreatePost() {
+  const darkThemeEnabled = useSelector((state) => state?.darkThemeEnabled);
   return (
-    <div className="create_post">
+    <Wrapper
+      className="create_post"
+      style={{ border: darkThemeEnabled ? "none" : "1px solid #eaeaea" }}
+    >
       <div>
         <RedditIcon className="create_post__reddit-icon" />
       </div>
@@ -24,7 +30,7 @@ function CreatePost() {
       <div>
         <LinkIcon className="create_post__link-icon" />
       </div>
-    </div>
+    </Wrapper>
   );
 }
 

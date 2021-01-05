@@ -1,11 +1,17 @@
 import React from "react";
 import SecurityIcon from "@material-ui/icons/Security";
 import { Button } from "react-bootstrap";
+import { Wrapper } from "../../theme/Wrapper";
+import { useSelector } from "react-redux";
 import "./style.css";
 
 function RedditPremium() {
+  const darkThemeEnabled = useSelector((state) => state?.darkThemeEnabled);
   return (
-    <div className="reddit_premium">
+    <Wrapper
+      className="reddit_premium"
+      style={{ border: darkThemeEnabled ? "1px solid #555" : "1px solid #eee" }}
+    >
       <div className="mr-2">
         <SecurityIcon style={{ color: "#FF4500" }} />
       </div>
@@ -19,7 +25,7 @@ function RedditPremium() {
           Try now
         </Button>
       </div>
-    </div>
+    </Wrapper>
   );
 }
 

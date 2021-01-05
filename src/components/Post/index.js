@@ -3,10 +3,16 @@ import PostVotes from "../PostVotes";
 import PostComments from "../PostComments";
 import LaunchRoundedIcon from "@material-ui/icons/LaunchRounded";
 import "./style.css";
+import { Wrapper } from "../../theme/Wrapper";
+import { useSelector } from "react-redux";
 
 function Post({ title, channel, label, labelColor, votes, comments }) {
+  const darkThemeEnabled = useSelector((state) => state?.darkThemeEnabled);
   return (
-    <div className="post-container">
+    <Wrapper
+      className="post-container"
+      style={{ border: darkThemeEnabled ? "none" : "1px solid #eee" }}
+    >
       <div className="votes-container p-0 m-0">
         <PostVotes votes={votes} />
       </div>
@@ -47,7 +53,7 @@ function Post({ title, channel, label, labelColor, votes, comments }) {
       <div className="comments-container">
         <PostComments comments={comments} />
       </div>
-    </div>
+    </Wrapper>
   );
 }
 

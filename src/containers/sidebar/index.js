@@ -4,10 +4,11 @@ import { FormControl } from "react-bootstrap";
 import Feeds from "../../components/Feeds";
 import MyCommunities from "../../components/MyCommunities";
 import Others from "../../components/Other";
+import { Wrapper } from "../../theme/Wrapper";
 
 function SidebarContainer() {
   return (
-    <div className="sidebar">
+    <Wrapper className="sidebar">
       <div className="p-3">
         <FormControl
           type="text"
@@ -22,7 +23,7 @@ function SidebarContainer() {
       <MyCommunities />
       <p className="list-heading">Other</p>
       <Others />
-    </div>
+    </Wrapper>
   );
 }
 

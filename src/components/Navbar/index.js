@@ -20,14 +20,20 @@ import SearchIcon from "@material-ui/icons/Search";
 import RedditIcon from "@material-ui/icons/Reddit";
 import { ProfileDropdownItems, UserInfo } from "../../reddit";
 import DropdownItem from "../../components/DropdownItem";
+import Brightness4Icon from "@material-ui/icons/Brightness4";
+import Brightness7Icon from "@material-ui/icons/Brightness7";
+import { toggleTheme } from "../../redux/actions";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function Header() {
+  const darkThemeEnabled = useSelector((state) => state?.darkThemeEnabled);
+  const dispatch = useDispatch();
   return (
     <>
       <Navbar
         expand="lg"
-        className="navbar navbar-default fixed-top"
         bg="white"
+        className="navbar navbar-default fixed-top"
       >
         <Navbar.Brand>
           <Image
@@ -98,6 +104,23 @@ export default function Header() {
                   })}
                 </Dropdown.Menu>
               </Dropdown>
+            </Nav.Link>
+            <Nav.Link>
+              <Button
+                className="p-0 m-0 border-0"
+                style={{
+                  backgroundColor: "#fff",
+                  boxShadow: "none",
+                  outline: "none",
+                }}
+                onClick={() => dispatch(toggleTheme())}
+              >
+                {!darkThemeEnabled ? (
+                  <Brightness4Icon className="mt-2" style={{ color: "#000" }} />
+                ) : (
+                  <Brightness7Icon className="mt-2" style={{ color: "#000" }} />
+                )}
+              </Button>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

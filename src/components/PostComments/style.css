@@ -9,7 +9,7 @@
 
 .post-comments {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 667px) {

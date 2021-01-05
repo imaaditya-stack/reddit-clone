@@ -1,8 +1,7 @@
 .post-container {
     display: flex;
     justify-content: space-between;
-    background-color: #fff;
-    border: 1px solid #eee;
+    /* border: 1px solid #eee; */
 }
 
 .post-main-div {

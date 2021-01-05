@@ -1,9 +1,15 @@
 import React from "react";
+import { Wrapper } from "../../theme/Wrapper";
 import "./style.css";
+import { useSelector } from "react-redux";
 
 function Footer() {
+  const darkThemeEnabled = useSelector((state) => state?.darkThemeEnabled);
   return (
-    <div className="footer-container">
+    <Wrapper
+      className="footer-container"
+      style={{ border: darkThemeEnabled ? "1px solid #555" : "1px solid #eee" }}
+    >
       <div className="links-container">
         <ul>
           <li>Help</li>
@@ -26,7 +32,7 @@ function Footer() {
         <ul></ul>
       </div>
       <span>Reddit Inc © 2020. All rights reserved</span>
-    </div>
+    </Wrapper>
   );
 }
 

@@ -1,16 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
 * {
-    font-family: 'Kumbh Sans', sans-serif;
-}
-
-body,
-html {
-    background-color: #dae0e6;
+    font-family: "Kumbh Sans", sans-serif;
 }
 
 .app-wrapper {
     display: flex;
-    background-color: #dae0e6;
     justify-content: space-between;
     margin-top: 50px;
 }
